@@ -7,18 +7,11 @@ userMail = prompt("What is your email address?")
     .replaceAll(" ","");
 userYear = prompt("What is your year of birth?")
     .replaceAll(" ", "");
-
 currentDate = new Date();
 currentYear = currentDate.getFullYear();
 userAge = currentYear - userYear;
 
-// console.log(userFistName);
-// console.log(userLastName);
-// console.log(userMail);
-// console.log(userAge);
-
-document.write(`
-<p>Full name: ${userFistName} ${userLastName}</p>`)
+document.write(`<p>Full name: ${userFistName} ${userLastName}</p>`);
 
 if(userMail.indexOf(`@`) == -1){
 	document.write(`<p>Email: not valid email <b>${userMail}</b> (symbol @ not exist)</p>`);
