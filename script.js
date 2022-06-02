@@ -11,7 +11,7 @@ currentDate = new Date();
 currentYear = currentDate.getFullYear();
 userAge = currentYear - userYear;
 
-document.write(`<p>Full name: ${userFistName} ${userLastName}</p>`);
+document.write(`<p>Full name: <b>${userFistName} ${userLastName}</b></p>`);
 
 if(userMail.indexOf(`@`) == -1){
 	document.write(`<p>Email: not valid email <b>${userMail}</b> (symbol @ not exist)</p>`);
@@ -23,4 +23,4 @@ if(userMail.indexOf(`@`) == -1){
 	document.write(`<p>Email: ${userMail}</p>`);
 }
 
-document.write(`<p>Age: ${userAge}</p>`);
+document.write(`<p>Age: <b>${userAge}</b></p>`);
